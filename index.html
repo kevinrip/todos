@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Generate Todo</title>
+    <style>
+        /* center the H1 element horizontally and vertically */
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            /* show clicking cursor on hover */
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1 onclick="x()">generate todo list
+    </h1>
+
+    <script>
+        function x() {
+            document.querySelector('h1').innerText = '☑️ love marinella';
+            document.querySelector('h1').onclick = y;
+        }
+
+        function y() {
+            document.querySelector('h1').innerText = '✅ love marinella';
+        }
+    </script>
+
+</body>
+
+</html>
